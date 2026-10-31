@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Portfolio of Mico C. Dotollo, Grade 8 Student at SMCHLI. Beginner developer skilled in HTML, CSS, JS, and Python.">
+  <title>Mico C. Dotollo | Developer Portfolio</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Custom Cursor (Desktop Only) -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Animated Background Elements -->
+  <div class="bg-gradient"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="#home" class="logo">MCD<span>.</span></a>
+      
+      <!-- Mobile Menu Button -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn-nav">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- HERO SECTION -->
+    <section id="home" class="hero section">
+      <div class="hero-content reveal">
+        <div class="badge floating">👋 Welcome to my space</div>
+        <h1 class="glow-text">Hi, I'm <br><span class="gradient-text">Mico C. Dotollo</span></h1>
+        <h2 class="subtitle">
+          I am a <span class="typing-text" id="typing-text"></span><span class="cursor-blink">|</span>
+        </h2>
+        <p class="description">
+          Grade 8 student at Saint Michael College of Hindang Leyte Inc. (SMCHLI). I am a passionate beginner exploring the world of programming, building projects, and turning ideas into code.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        
+        <!-- Social Links / Mini Stats -->
+        <div class="hero-socials reveal delay-2">
+          <div class="social-item"><span>🎓</span> Grade 8</div>
+          <div class="social-item"><span>🏫</span> SMCHLI</div>
+          <div class="social-item"><span>💻</span> 4 Languages</div>
+        </div>
+      </div>
+      
+      <!-- Hero Visual (Code Window) -->
+      <div class="hero-visual reveal delay-1">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="dots red"></div>
+            <div class="dots yellow"></div>
+            <div class="dots green"></div>
+            <div class="window-title">mico.json</div>
+          </div>
+          <div class="window-body">
+<pre><code>{
+  <span class="code-key">"name"</span>: <span class="code-string">"Mico C. Dotollo"</span>,
+  <span class="code-key">"role"</span>: <span class="code-string">"Beginner Developer"</span>,
+  <span class="code-key">"school"</span>: <span class="code-string">"SMCHLI"</span>,
+  <span class="code-key">"skills"</span>: [
+    <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, 
+    <span class="code-string">"JavaScript"</span>, <span class="code-string">"Python"</span>
+  ],
+  <span class="code-key">"status"</span>: <span class="code-string">"Learning & Building"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section">
+      <div class="section-header reveal">
+        <h2>About <span class="gradient-text">Me</span></h2>
+        <div class="line"></div>
+        <p class="section-subtitle">Get to know the person behind the code.</p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="glass-card reveal">
+          <div class="icon-box">🎓</div>
+          <h3>My Education</h3>
+          <p>I am currently studying in <strong>Grade 8</strong> at <strong>Saint Michael College of Hindang Leyte Inc. (SMCHLI)</strong>. Balancing my academics with my growing passion for technology.</p>
+        </div>
+        
+        <div class="glass-card reveal delay-1">
+          <div class="icon-box">🚀</div>
+          <h3>The Journey</h3>
+          <p>As a beginner, every day is a learning experience. I enjoy solving problems, styling websites with CSS, and making things interactive with JavaScript.</p>
+        </div>
+        
+        <div class="glass-card reveal delay-2">
+          <div class="icon-box">💡</div>
+          <h3>My Vision</h3>
+          <p>I believe in learning by doing. My goal is to build more complex web applications, master JavaScript, and create useful Python scripts.</p>
+        </div>
+      </div>
+
+      <!-- Stats Counter -->
+      <div class="stats-container reveal delay-3">
+        <div class="stat-item">
+          <h3 class="counter" data-target="4">0</h3>
+          <p>Languages Learning</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="8">0</h3>
+          <p>Grade Level</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="100">0</h3>
+          <p>% Dedication</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills section">
+      <div class="section-header reveal">
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <div class="line"></div>
+        <p class="section-subtitle">The technologies I am currently learning and using.</p>
+      </div>
+      
+      <div class="skills-wrapper">
+        <div class="skills-container glass-card reveal">
+          <!-- HTML -->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="icon">🌐</span> HTML5</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill html-fill" style="width: 0%;" data-width="85%"></div>
+            </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="icon">🎨</span> CSS3</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill css-fill" style="width: 0%;" data-width="75%"></div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="icon">⚡</span> JavaScript</span>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill js-fill" style="width: 0%;" data-width="60%"></div>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><span class="icon">🐍</span> Python</span>
+              <span class="skill-percent">50%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill python-fill" style="width: 0%;" data-width="50%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-text reveal delay-2">
+          <h3>Always Learning</h3>
+          <p>Technology moves fast, and I'm moving with it. I spend my free time watching tutorials, reading documentation, and writing my own code.</p>
+          <ul class="check-list">
+            <li>✔️ Responsive Web Design</li>
+            <li>✔️ Basic DOM Manipulation</li>
+            <li>✔️ Python Logic & Loops</li>
+            <li>✔️ Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY TIMELINE SECTION -->
+    <section id="journey" class="journey section">
+      <div class="section-header reveal">
+        <h2>My Coding <span class="gradient-text">Journey</span></h2>
+        <div class="line"></div>
+        <p class="section-subtitle">How I started and where I am going.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="date">2026 - The Spark</span>
+            <h3>Discovering Code</h3>
+            <p>I wrote my very first "Hello World" in HTML. Seeing my own text appear on a web browser was magical and sparked my curiosity.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="date">2027 - Styling It Up</span>
+            <h3>Learning CSS & JS</h3>
+            <p>I moved beyond plain text and started learning how to style pages, add colors, animations, and basic interactivity using JavaScript.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="date">Present Day</span>
+            <h3>Python & Beyond</h3>
+            <p>I am currently learning Python to understand backend logic and strengthen my programming fundamentals. The journey continues!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects section">
+      <div class="section-header reveal">
+        <h2>Beginner <span class="gradient-text">Projects</span></h2>
+        <div class="line"></div>
+        <p class="section-subtitle">Small steps that lead to big progress.</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-image">
+            <div class="project-icon">📱</div>
+          </div>
+          <div class="project-info">
+            <h3>Simple Calculator</h3>
+            <p>Built using HTML, CSS, and basic JavaScript logic to perform arithmetic operations. Features a clean glassmorphism UI.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal delay-1">
+          <div class="project-image">
+            <div class="project-icon">📝</div>
+          </div>
+          <div class="project-info">
+            <h3>To-Do List App</h3>
+            <p>A web application to add, check, and remove daily tasks. This project helped me practice DOM manipulation and arrays in JavaScript.</p>
+            <div class="project-tags">
+              <span>JS</span><span>CSS</span><span>LocalStorage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal delay-2">
+          <div class="project-image">
+            <div class="project-icon">🐍</div>
+          </div>
+          <div class="project-info">
+            <h3>Python Quiz Game</h3>
+            <p>A simple terminal-based quiz game built in Python. It asks multiple-choice questions and keeps track of the user's score.</p>
+            <div class="project-tags">
+              <span>Python</span><span>CLI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section">
+      <div class="glass-card contact-card reveal">
+        <div class="contact-content">
+          <h2>Let's <span class="gradient-text">Connect</span></h2>
+          <p>I am always open to learning, collaborating on beginner projects, or just having a chat about coding. Feel free to reach out!</p>
+          <div class="contact-info">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <span>Hindang, Leyte, Philippines</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🏫</span>
+              <span>Saint Michael College (SMCHLI)</span>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form" id="contactForm">
+          <div class="input-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="input-group">
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">MCD<span>.</span></div>
+      <p>&copy; 2024 Mico C. Dotollo. Built with passion &amp; code.</p>
+      <p class="footer-sub">Saint Michael College of Hindang Leyte Inc.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- External JS -->
+  <script src="main.js"></script>
+</body>
+</html
